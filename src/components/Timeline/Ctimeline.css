@@ -1,0 +1,6 @@
+.MuiTimelineItem-missingOppositeContent::before {
+  display: none;
+}
+.xyz {
+  color: 'white';
+}
