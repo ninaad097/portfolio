@@ -62,7 +62,7 @@ export const Profile = () => {
   return (
     <Paper className={classes.profile_container}>
       <div className={classes.profile_title}>
-      <Typography className={classes.profile_name} variant="h4">Ninad Sonawane</Typography>
+      <Typography className={classes.profile_name} variant="h4">NinadisGreat</Typography>
       <Typography className={classes.profile_designation} variant="subtitle1">MERN Stack Developer</Typography>
       </div>
       <div className={classes.profile_img}>
