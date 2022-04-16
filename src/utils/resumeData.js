@@ -14,7 +14,7 @@ import blog2 from "../assests/blog24:7-2.png"
 import mamaBakery from "../assests/bakery-site.png"
 import drumKit from "../assests/drum-kit.png"
 import React from "react"
-import { GitHub, Language, YoutubeSearchedForOutlined } from '@mui/icons-material';
+import { GitHub, Language } from '@mui/icons-material';
 
 export default {
   details: [
