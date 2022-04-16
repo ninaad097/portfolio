@@ -1,20 +1,30 @@
-import { Card, CardActionArea, CardContent, CardMedia, Dialog, DialogActions, DialogContent, DialogTitle, Grid, Grow, Tab, Tabs, Typography } from '@mui/material'
+import { Card, CardActionArea, CardContent, CardMedia, Dialog, DialogActions, DialogContent, DialogTitle, Grid, Grow, Tab, Tabs, Typography, Slide } from '@mui/material'
 import useMediaQuery from '@mui/material/useMediaQuery';
 import React, { useState } from 'react'
+import CloseIcon from '@mui/icons-material/Close';
 import clsx from 'clsx'
 import { makeStyles } from '@mui/styles'
 import resumeData from '../utils/resumeData'
 import './Port.css'
 const useStyles  = makeStyles((theme) => ({
+
+   close:{
+     position:'absolute',
+     right:'4px',
+     top:'4px',
+     height:'18px',
+     width:'18px'
+  },  
   dialog:{
-  height:'90%',
+  position:'relative',
+  height:'80%',
   },
   dialog_des:{
   marginTop:'10px'
   },
   dialog_img:{
-    minHeight:'70%',
-    objectFit:'cover',
+    minHeight:'60%',
+    objectFit:'contain',
     objectPosition:'center center',
     padding:'auto 5%'
   },
@@ -92,6 +102,11 @@ MozBoxShadow: "-3px 1px 5px 2px rgba(171,210,250,0.75)",
       backgroundColor:'#abd2fa'
     }
 }))
+
+const SlideTransition = React.forwardRef(function Transition(props, ref) {
+	return <Slide direction="up" ref={ref} {...props} />;
+});
+
 export const Portfolio = () => {
   const matches = useMediaQuery('(min-width:430px)');
   const [tabvalue , setTabValue] = useState("All");
@@ -151,7 +166,8 @@ export const Portfolio = () => {
       </Grid>
     </Grid>
     </Grid>
-    <Dialog fullWidth maxWidth className={classes.dialog} open={projectDialog} onClose={() => setprojectDialog(false)}>
+    <Dialog TransitionComponent={SlideTransition} classes={{ paperFullScreen: classes.dialog }}  fullWidth maxWidth open={projectDialog} onClose={() => setprojectDialog(false)}>
+     <CloseIcon  className={classes.close}  onClick={() => setprojectDialog(false)}/>
      <DialogTitle className={classes.dialog_title} open={projectDialog} onClose={() => setprojectDialog(false)}>
      {projectDialog.title}
      </DialogTitle> 
@@ -162,7 +178,6 @@ export const Portfolio = () => {
      <DialogActions>
        { projectDialog?.links?.map((l , i) => (
          <Typography align='center' key={i}>  <a className={classes.dialog_links} href={l.link}>{l.icon}</a></Typography>
-       
        ))}
      </DialogActions>
     </Dialog>
