@@ -8,9 +8,8 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import reviewReserve from '../assests/review-reserve.png'
 import todolist from "../assests/to-do-list.png"
 import randomApi from "../assests/random-api.png"
-import tindog from "../assests/tin-dog.png"
 import blog1 from "../assests/blog24:7-1.png"
-import blog2 from "../assests/blog24:7-2.png"
+// import blog2 from "../assests/blog24:7-2.png"
 import mamaBakery from "../assests/bakery-site.png"
 import drumKit from "../assests/drum-kit.png"
 import React from "react"
@@ -148,8 +147,8 @@ export default {
       title: 'To-Do List',
       description: 'Its a simple to-do list with CRUD operations built on ReactJs',
       links: [
-        { link: 'https://www.google.com', icon: <GitHub /> },
-        { link: 'https://www.google.com', icon: <Language /> },
+        { link: 'https://github.com/ninadsonawane/to-do-list', icon: <GitHub /> },
+        { link: 'https://todobyninad.vercel.app/', icon: <Language /> },
       ]
     },
     {
@@ -158,13 +157,13 @@ export default {
       title: 'Review Reserve',
       description: 'Review Reserve is a simple social media where users and post reviews and lot more.',
       links: [
-        { link: 'https://www.google.com', icon: <GitHub /> },
+        { link: 'https://github.com/ninadsonawane/review-reserve', icon: <GitHub /> },
         { link: 'https://www.google.com', icon: <Language /> },
       ]
     },
     {
       tag: 'MERN',
-      image: blog2,
+      image: blog1,
       title: 'Blog24/7',
       description: 'Blog24/7 is also built on MERN Stack. Users can write blogs and it will be stored later in mongDB database.',
       links: [
@@ -176,20 +175,20 @@ export default {
       tag: 'JavaScript',
       image: drumKit,
       title: 'Drum-kit',
-      description: 'Its a simple drum kit website..',
+      description: 'Its a simple drum kit website.',
       links: [
-        { link: 'https://www.google.com', icon: <GitHub /> },
-        { link: 'https://www.google.com', icon: <Language /> },
+        { link: 'https://github.com/ninadsonawane/drunk-kit', icon: <GitHub /> },
+        { link: 'https://drumkitbyninad.vercel.app/', icon: <Language /> },
       ]
     },
     {
       tag: 'React',
       image: randomApi,
       title: 'Random Advice',
-      description: 'Simple website giving you random thoughts!',
+      description: 'Simple website giving you random thoughts,using a foreign api..',
       links: [
-        { link: 'https://www.google.com', icon: <GitHub /> },
-        { link: 'https://www.google.com', icon: <Language /> },
+        { link: 'https://github.com/ninadsonawane/random-advice', icon: <GitHub /> },
+        { link: 'https://randomapibyninad.vercel.app/', icon: <Language /> },
       ]
     },
     {
@@ -198,8 +197,8 @@ export default {
       title: "Mama's Bakery",
       description: 'Simple landing page for bakery build on nextjs',
       links: [
-        { link: 'https://www.google.com', icon: <GitHub /> },
-        { link: 'https://www.google.com', icon: <Language /> },
+        { link: 'https://github.com/ninadsonawane/bakerysite', icon: <GitHub /> },
+        { link: 'https://bakerysite-g0rnzkt74-ninad.vercel.app/', icon: <Language /> },
       ]
     }
   ]

@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
     
   },
   timeline_dot:{
-    marginLeft:'6.6px',
+    marginLeft:'7px',
     marginBottom:'0',
     color:'black',
     backgroundColor:'#abd2fa',
